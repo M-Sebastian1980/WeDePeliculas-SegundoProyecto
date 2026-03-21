@@ -1,0 +1,246 @@
+.navbar {
+  width: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  border-bottom: 1px solid #333;
+  background: linear-gradient(to right, #0a093e 0%, #153363 100%) !important;
+}
+
+.logo-navbar {
+  height: 125px;    
+  width: auto;       
+  margin-right: 10px; 
+}
+.nav-link {
+  color: #ffffff !important; 
+  font-weight: 600;         
+  font-size: 1.4rem;         
+  margin-left: 20px;       
+  transition: all 0.3s ease; 
+}
+.nav-link:hover {
+  color: #9955ff !important;
+ scale: calc(1.4);
+}
+.navbar-nav {
+  margin-right: 90px;
+}
+
+@keyframes aparecerError {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-search-form {
+  width: 100%;
+  max-width: 400px; 
+}
+
+.search-input {
+  border-radius: 20px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-btn {
+  border-radius: 50%; 
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #fff; 
+  border-radius: 2px;
+}
+.custom-navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-navbar {
+  height: 45px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+.navbar-search-form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+  border-radius: 20px;
+  border: none;
+}
+
+
+.nav-link {
+  transition: color 1.6s ease-in-out;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #181a1c;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  .navbar-search-form {
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+  }
+  .custom-nav-list {
+    text-align: center;
+    gap: 15px;
+  }
+  .user-info-mobile {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.custom-navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo-navbar {
+  height: 100px; 
+}
+
+.navbar-search-form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 8px; 
+  padding-bottom: 8px;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px; 
+}
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .logo-navbar {
+    height: 50px; 
+  }
+
+  .navbar-collapse {
+    background-color: #181a1c;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+
+  .navbar-search-form {
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+  }
+
+  .custom-nav-list {
+    text-align: center;
+    gap: 15px;
+  }
+
+  .user-info-mobile {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
