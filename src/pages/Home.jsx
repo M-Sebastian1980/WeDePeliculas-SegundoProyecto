@@ -24,12 +24,135 @@ const accion = [
   { id: 20, titulo: 'ALERTA EXTREMA', imagen: 'https://pics.filmaffinity.com/plane-349391874-msmall.jpg', trailer:'https://www.youtube.com/embed/dIxksjh3J5E?si=QWPZ_iq94uJ3OeBf' },
 ]
 
+const terror = [
+  { id: 21, titulo: 'DRACULA', imagen: 'https://pics.filmaffinity.com/dracula_a_love_tale-553481403-msmall.jpg' },
+  { id: 22, titulo: 'EL SONIDO DE LA MUERTE', imagen: 'https://pics.filmaffinity.com/whistle-675923197-msmall.jpg' },
+  { id: 23, titulo: 'EL TELEFONO NEGRO', imagen: 'https://pics.filmaffinity.com/the_black_phone-848459573-msmall.jpg' },
+  { id: 24, titulo: 'EL CONJURO 4', imagen: 'https://pics.filmaffinity.com/the_conjuring_last_rites-547210494-msmall.jpg' },
+  { id: 25, titulo: 'DESTINO FINAL 6', imagen: 'https://pics.filmaffinity.com/final_destination_bloodlines-790034090-msmall.jpg' },
+  { id: 26, titulo: 'ALIENS ROMULUS', imagen: 'https://pics.filmaffinity.com/alien_romulus-177464034-msmall.jpg' },
+  { id: 27, titulo: '28 AÑOS DESPUES', imagen: 'https://pics.filmaffinity.com/28_years_later-958240308-msmall.jpg' },
+  { id: 28, titulo: 'PRESENCIA', imagen: 'https://pics.filmaffinity.com/presence-358240836-msmall.jpg' },
+  { id: 29, titulo: 'NOSFERATU', imagen: 'https://pics.filmaffinity.com/nosferatu-964410519-msmall.jpg' },
+  { id: 30, titulo: 'HAZ QUE REGRESE', imagen: 'https://pics.filmaffinity.com/bring_her_back-516362359-msmall.jpg' },
+  { id: 31, titulo: 'COLECCIONISTA DE ALMAS', imagen: 'https://pics.filmaffinity.com/longlegs-192102975-msmall.jpg' },
+  { id: 32, titulo: 'HEREJE', imagen: 'https://pics.filmaffinity.com/heretic-158529513-msmall.jpg' },
+  { id: 33, titulo: 'REGALO MALDITO', imagen: 'https://pics.filmaffinity.com/vicious-799999558-msmall.jpg' },
+  { id: 34, titulo: 'NO HABLES CON EXTRAÑOS', imagen: 'https://pics.filmaffinity.com/speak_no_evil-102462605-msmall.jpg' },
+  { id: 35, titulo: 'UN LUGAR EN SILENCIO', imagen: 'https://pics.filmaffinity.com/a_quiet_place_day_one-758712709-msmall.jpg' },
+  { id: 36, titulo: 'LA PRIMERA PROFECIA', imagen: 'https://pics.filmaffinity.com/the_first_omen-372679118-msmall.jpg' },
+  { id: 37, titulo: 'OBSERVADOS', imagen: 'https://pics.filmaffinity.com/the_watchers-599911256-msmall.jpg' },
+  { id: 38, titulo: 'EL RIO DE LA MUERTE', imagen: 'https://pics.filmaffinity.com/river_of_blood-675288102-msmall.jpg' },
+  { id: 39, titulo: 'INMACULADA', imagen: 'https://pics.filmaffinity.com/immaculate-866612378-msmall.jpg' },
+  { id: 40, titulo: 'TERRIFER 3', imagen: 'https://pics.filmaffinity.com/terrifier_3-141451507-msmall.jpg' },
+]
+
+const romance = [
+  { id: 41, titulo: 'A PESAR DE TI', imagen: 'https://pics.filmaffinity.com/regretting_you-808313332-msmall.jpg' },
+  { id: 42, titulo: 'AMOR', imagen: 'https://pics.filmaffinity.com/kjaerlighet_love-433411494-msmall.jpg' },
+  { id: 43, titulo: 'AMOR SIN BARRERAS', imagen: 'https://pics.filmaffinity.com/west_side_story-621764532-msmall.jpg' },
+  { id: 44, titulo: 'ENCANTADO DE CONOCERTE', imagen: 'https://pics.filmaffinity.com/yalmiun_sarang-594794058-msmall.jpg' },
+  { id: 45, titulo: 'YESTERDAY', imagen: 'https://pics.filmaffinity.com/yesterday-541518094-msmall.jpg' },
+  { id: 46, titulo: 'UN AÑO Y UN DIA', imagen: 'https://pics.filmaffinity.com/un_ano_y_un_dia-530612850-msmall.jpg' },
+  { id: 47, titulo: 'PASAJE AL PARAISO', imagen: 'https://pics.filmaffinity.com/ticket_to_paradise-762328478-msmall.jpg' },
+  { id: 48, titulo: 'LOS HIJOS DE OTROS', imagen: 'https://pics.filmaffinity.com/les_enfants_des_autres-784062624-mmed.jpg' },
+  { id: 49, titulo: 'EL MAPA QUE ME LLEVA A TI', imagen: 'https://pics.filmaffinity.com/the_map_that_leads_to_you-994903243-msmall.jpg' },
+  { id: 50, titulo: 'ESA SEMANA JUNTOS', imagen: 'https://pics.filmaffinity.com/esa_semana_juntos-139352634-msmall.jpg' },
+  { id: 51, titulo: 'IMPERIO DE LUZ', imagen: 'https://pics.filmaffinity.com/empire_of_light-758763304-msmall.jpg' },
+  { id: 52, titulo: 'BODAS DE PLOMO', imagen: 'https://pics.filmaffinity.com/shotgun_wedding-157709145-msmall.jpg' },
+  { id: 53, titulo: 'CASATE CONMIGO', imagen: 'https://pics.filmaffinity.com/marry_me-852565093-msmall.jpg' },
+  { id: 54, titulo: 'PERSUASION', imagen: 'https://pics.filmaffinity.com/persuasion-134146216-msmall.jpg' },
+  { id: 55, titulo: 'MI POLICIA', imagen: 'https://pics.filmaffinity.com/my_policeman-860997796-msmall.jpg' },
+  { id: 56, titulo: 'UN ASUNTO PRIVADO', imagen: 'https://pics.filmaffinity.com/un_asunto_privado-458992631-msmall.jpg' },
+  { id: 57, titulo: 'AMOR DE MENTIRAS', imagen: 'https://pics.filmaffinity.com/u_ju_me_li_mi-866173974-msmall.jpg' },
+  { id: 58, titulo: 'CORAZONES MALHERIDOS', imagen: 'https://pics.filmaffinity.com/purple_hearts-357101918-msmall.jpg' },
+  { id: 59, titulo: 'LA IMPACIENCIA DEL COROZON', imagen: 'https://pics.filmaffinity.com/kysset_the_kiss-163894266-msmall.jpg' },
+  { id: 60, titulo: 'UNA CUESTION DE FE', imagen: 'https://pics.filmaffinity.com/about_fate-692459348-msmall.jpg' },
+]
+
+const comedia = [
+  { id: 61, titulo: 'LA PISTOLA DESNUDA', imagen: 'https://pics.filmaffinity.com/the_naked_gun-495738280-msmall.jpg' },
+  { id: 62, titulo: 'UN DIA FUERA DE CONTROL', imagen: 'https://pics.filmaffinity.com/playdate-995002724-msmall.jpg' },
+  { id: 63, titulo: 'VIAJE DE FIN DE CURSO', imagen: 'https://pics.filmaffinity.com/viaje_de_fin_de_curso_mallorca-687946770-msmall.jpg' },
+  { id: 64, titulo: 'UN FUNERAL DE LOCOS', imagen: 'https://pics.filmaffinity.com/un_funeral_de_locos-332020688-msmall.jpg' },
+  { id: 65, titulo: 'OTRO PEQUEÑO FAVOR', imagen: 'https://pics.filmaffinity.com/another_simple_favor-325262759-msmall.jpg' },
+  { id: 66, titulo: 'PLAN FAMILIAR 2', imagen: 'https://pics.filmaffinity.com/the_family_plan_2-742120702-msmall.jpg' },
+  { id: 67, titulo: 'OTRO VIERNES DE LOCOS', imagen: 'https://pics.filmaffinity.com/freakier_friday-790025087-msmall.jpg' },
+  { id: 68, titulo: 'ENCANTADO DE NO CONOCERTE', imagen: 'https://pics.filmaffinity.com/yalmiun_sarang-594794058-msmall.jpg' },
+  { id: 69, titulo: 'MANTENIMIENTO REQUERIDO', imagen: 'https://pics.filmaffinity.com/maintenance_required-694057919-msmall.jpg' },
+  { id: 70, titulo: 'LA AGENCIA', imagen: 'https://pics.filmaffinity.com/la_agencia-326712184-msmall.jpg' },
+  { id: 71, titulo: 'UNA ABOGADA BRILLANTE', imagen: 'https://pics.filmaffinity.com/uma_advogada_brilhante-224189644-msmall.jpg' },
+  { id: 72, titulo: 'EL ULTIMO ENCARGO', imagen: 'https://pics.filmaffinity.com/the_pickup-568420334-msmall.jpg' },
+  { id: 73, titulo: 'MINECRAFT', imagen: 'https://pics.filmaffinity.com/a_minecraft_movie-227832687-msmall.jpg' },
+  { id: 74, titulo: 'LA MITAD QUE FALTA', imagen: 'https://pics.filmaffinity.com/twinless-862538325-msmall.jpg' },
+  { id: 75, titulo: 'EL PAPEL', imagen: 'https://pics.filmaffinity.com/the_paper-536779354-msmall.jpg' },
+  { id: 76, titulo: 'EL NOVIO DE MAMÁ', imagen: 'https://pics.filmaffinity.com/el_novio_de_mama-723682273-msmall.jpg' },
+  { id: 77, titulo: 'ANACONDA', imagen: 'https://pics.filmaffinity.com/anaconda-237905960-msmall.jpg' },
+  { id: 78, titulo: 'AMORES COMPARTIDOS', imagen: 'https://pics.filmaffinity.com/splitsville-274874441-msmall.jpg' },
+  { id: 79, titulo: 'DESASTRE EN FAMILIA', imagen: 'https://pics.filmaffinity.com/desastre_en_familia-782866915-msmall.jpg' },
+  { id: 80, titulo: 'BRIDGET JONES: LOCA POR ËL', imagen: 'https://pics.filmaffinity.com/bridget_jones_mad_about_the_boy-609929628-msmall.jpg' },
+]
+
+const drama = [
+  { id: 81, titulo: 'LA NOVIA', imagen: 'https://pics.filmaffinity.com/the_bride-245563663-msmall.jpg' },
+  { id: 82, titulo: 'UN FAMILIAR', imagen: 'https://pics.filmaffinity.com/unfamiliar-352724765-msmall.jpg' },
+  { id: 83, titulo: 'LA FIERA', imagen: 'https://pics.filmaffinity.com/la_fiera-265804283-msmall.jpg' },
+  { id: 84, titulo: 'CUMBRES BORRASCOSAS', imagen: 'https://pics.filmaffinity.com/wuthering_heights-945530459-msmall.jpg' },
+  { id: 85, titulo: 'MUJERES IMPERFECTAS', imagen: 'https://pics.filmaffinity.com/imperfect_women-736397939-msmall.jpg' },
+  { id: 86, titulo: 'EN UN ABRIR Y CERRRAR DE OJOS', imagen: 'https://pics.filmaffinity.com/in_the_blink_of_an_eye-485419387-msmall.jpg' },
+  { id: 87, titulo: 'PROYECTO FIN DEL MUNDO', imagen: 'https://pics.filmaffinity.com/project_hail_mary-593131774-msmall.jpg' },
+  { id: 88, titulo: 'SALVADOR', imagen: 'https://pics.filmaffinity.com/salvador-757944422-msmall.jpg' },
+  { id: 89, titulo: 'LA CAZA', imagen: 'https://pics.filmaffinity.com/traques-181187658-msmall.jpg' },
+  { id: 90, titulo: 'CAMINOS DEL CRIMEN', imagen: 'https://pics.filmaffinity.com/crime_101-127743661-msmall.jpg' },
+  { id: 91, titulo: 'EL INFIERNO DE LAS MUJERES', imagen: 'https://pics.filmaffinity.com/pieklo_kobiet-285503510-msmall.jpg' },
+  { id: 92, titulo: 'BAILANDO SOBRE HIELO', imagen: 'https://pics.filmaffinity.com/finding_her_edge-844715437-msmall.jpg' },
+  { id: 93, titulo: 'AMOR ANIMAL', imagen: 'https://pics.filmaffinity.com/amor_animal-485837502-msmall.jpg' },
+  { id: 94, titulo: 'EL MUSEO DE LA INOCENCIA', imagen: 'https://pics.filmaffinity.com/masumiyet_muzesi-367568816-msmall.jpg' },
+  { id: 95, titulo: 'SOLO MIO', imagen: 'https://pics.filmaffinity.com/solo_mio-533398345-msmall.jpg' },
+  { id: 96, titulo: 'EN LA ZONA GRIS', imagen: 'https://pics.filmaffinity.com/in_the_grey-165473531-msmall.jpg' },
+  { id: 97, titulo: 'LAS LOCAS DEL OBELISCO', imagen: 'https://pics.filmaffinity.com/las_locas_del_obelisco-985429911-msmall.jpg' },
+  { id: 98, titulo: 'JOVEN SECUESTRADA', imagen: 'https://pics.filmaffinity.com/girl_taken-653578890-msmall.jpg' },
+  { id: 99, titulo: 'NO TE OLVIDARE', imagen: 'https://pics.filmaffinity.com/reminders_of_him-219584202-msmall.jpg' },
+  { id: 100, titulo: 'LOS JUSTOS', imagen: 'https://pics.filmaffinity.com/los_justos-491540068-msmall.jpg' },
+]
+
+const cienciaFiccion = [
+  { id: 101, titulo: 'SIN PIEDAD', imagen: 'https://pics.filmaffinity.com/mercy-236747908-msmall.jpg' },
+  { id: 102, titulo: 'JURASSIC WORLD: Renace', imagen: 'https://pics.filmaffinity.com/jurassic_world_rebirth-254962281-msmall.jpg' },
+  { id: 103, titulo: 'MICKEY 17', imagen: 'https://pics.filmaffinity.com/mickey_17-530854063-msmall.jpg' },
+  { id: 104, titulo: 'CONTROL ROOM', imagen: 'https://pics.filmaffinity.com/control_room-766434300-msmall.jpg' },
+  { id: 105, titulo: 'LOS 4 FANTASTICOS', imagen: 'https://pics.filmaffinity.com/the_fantastic_four_first_steps-284761648-msmall.jpg' },
+  { id: 106, titulo: 'CAZADORES DEL FIN DEL MUNDO', imagen: 'https://pics.filmaffinity.com/afterburn-596088531-msmall.jpg' },
+  { id: 107, titulo: 'COMPAÑERA PERFECTA', imagen: 'https://pics.filmaffinity.com/companion-438784716-msmall.jpg' },
+  { id: 108, titulo: 'ASH', imagen: 'https://pics.filmaffinity.com/ash-296434606-msmall.jpg' },
+  { id: 109, titulo: 'TRON ARES', imagen: 'https://pics.filmaffinity.com/tron_ares-548031766-msmall.jpg' },
+  { id: 110, titulo: 'AVATAR: Fuego y Cenizas', imagen: 'https://pics.filmaffinity.com/avatar_fire_and_ash-103982566-msmall.jpg' },
+  { id: 211, titulo: 'SUPERMAN', imagen: 'https://pics.filmaffinity.com/superman-138926671-msmall.jpg' },
+  { id: 122, titulo: 'DEPREDADOR: Tierras Salvajes', imagen: 'https://pics.filmaffinity.com/predator_badlands-767428270-msmall.jpg' },
+  { id: 123, titulo: 'LAZARUS', imagen: 'https://pics.filmaffinity.com/lazarus-840138202-msmall.jpg' },
+  { id: 124, titulo: 'HENRY DANGER: La Pelicula', imagen: 'https://pics.filmaffinity.com/henry_danger_the_movie-320089100-msmall.jpg' },
+  { id: 125, titulo: 'SPLIT FICTION', imagen: 'https://pics.filmaffinity.com/split_fiction-485356590-msmall.jpg' },
+  { id: 126, titulo: 'LOS PROTEGIDOS', imagen: 'https://pics.filmaffinity.com/los_protegidos_un_nuevo_poder-520864274-msmall.jpg' },
+  { id: 127, titulo: 'UN FUTURO BRILLANTE', imagen: 'https://pics.filmaffinity.com/un_futuro_brillante-642041362-msmall.jpg' },
+  { id: 128, titulo: 'EL DESCENDIENTE', imagen: 'https://pics.filmaffinity.com/descendent-940555761-msmall.jpg' },
+  { id: 129, titulo: 'RUR', imagen: 'https://pics.filmaffinity.com/r_u_r-318748025-msmall.jpg' },
+  { id: 200, titulo: 'PRIMAL GAMES', imagen: 'https://pics.filmaffinity.com/primal_games-828588786-msmall.jpg' },
+]
+
 function Home() {
   return (
     <>
       <Navbar />
       <h1>Home de pelís</h1>
       <CategoriaSlider titulo="Películas de Acción" peliculas={accion} />
+      <CategoriaSlider titulo="Películas de Terror" peliculas={terror} />
+      <CategoriaSlider titulo="Películas de Romance" peliculas={romance} />
+      <CategoriaSlider titulo="Películas de Comedia" peliculas={comedia} />
+      <CategoriaSlider titulo="Películas de Drama" peliculas={drama} />
+      <CategoriaSlider titulo="Películas de Ciencia Ficción" peliculas={cienciaFiccion} />
+      
+      
+    
     </>
   )
 }
