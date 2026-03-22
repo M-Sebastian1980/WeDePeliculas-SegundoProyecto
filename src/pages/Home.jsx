@@ -139,6 +139,52 @@ const cienciaFiccion = [
   { id: 200, titulo: 'PRIMAL GAMES', imagen: 'https://pics.filmaffinity.com/primal_games-828588786-msmall.jpg' },
 ]
 
+const animacion = [
+  { id: 201, titulo: 'ZOOTOPIA 2', imagen: 'https://pics.filmaffinity.com/zootopia_2-164123559-msmall.jpg' },
+  { id: 202, titulo: 'PITUFOS', imagen: 'https://pics.filmaffinity.com/smurfs-178339408-msmall.jpg' },
+  { id: 203, titulo: 'EL REY DE REYES', imagen: 'https://pics.filmaffinity.com/the_king_of_kings-104943300-msmall.jpg' },
+  { id: 204, titulo: 'JUNK WORLD', imagen: 'https://pics.filmaffinity.com/junk_world-358408976-msmall.jpg' },
+  { id: 205, titulo: 'ELIO', imagen: 'https://pics.filmaffinity.com/elio-639250511-msmall.jpg' },
+  { id: 206, titulo: 'EFECTOS COLATERALES', imagen: 'https://pics.filmaffinity.com/common_side_effects-450034236-msmall.jpg' },
+  { id: 207, titulo: 'LA FAMILIA MAS FELIZ DE LA NACION', imagen: 'https://pics.filmaffinity.com/1_happy_family_usa-191578627-msmall.jpg' },
+  { id: 208, titulo: 'TU AMIGHO Y VECINO SPIDERMAN', imagen: 'https://pics.filmaffinity.com/your_friendly_neighborhood_spider_man-970131418-msmall.jpg' },
+  { id: 209, titulo: 'HEIDI, EL RESCATE DE LINCE', imagen: 'https://pics.filmaffinity.com/heidi_die_legende_vom_luchs-379095822-msmall.jpg' },
+  { id: 210, titulo: 'GANES O PIERDAS', imagen: 'https://pics.filmaffinity.com/win_or_lose-810931735-msmall.jpg' },
+  { id: 211, titulo: 'JESUS, LUZ DEL MUNDO', imagen: 'https://pics.filmaffinity.com/light_of_the_world-989954133-msmall.jpg' },
+  { id: 212, titulo: 'EL TESORI DE BARRACUDA', imagen: 'https://pics.filmaffinity.com/el_tesoro_de_barracuda-632828628-msmall.jpg' },
+  { id: 213, titulo: 'LAS HERMANAS GRIMM', imagen: 'https://pics.filmaffinity.com/the_sisters_grimm-593134697-msmall.jpg' },
+  { id: 214, titulo: 'HANNA Y LAS NAVIDADES OLVIDADAS', imagen: 'https://pics.filmaffinity.com/hanna_i_els_nadals_oblidats-753012513-msmall.jpg' },
+  { id: 215, titulo: 'TOM Y JERRY', imagen: 'https://pics.filmaffinity.com/tom_jerry_forbidden_compass-751900648-msmall.jpg' },
+  { id: 216, titulo: 'DORA', imagen: 'https://pics.filmaffinity.com/dora_magic_mermaid_adventures-281538392-msmall.jpg' },
+  { id: 217, titulo: 'EL GRAN PREMIO A TODA VELOCIDAD', imagen: 'https://pics.filmaffinity.com/grand_prix_of_europe-487534885-msmall.jpg' },
+  { id: 218, titulo: 'FARMAGA', imagen: 'https://pics.filmaffinity.com/farmagia-626042002-msmall.jpg' },
+  { id: 219, titulo: 'LOS TIPOS MALOS', imagen: 'https://pics.filmaffinity.com/the_bad_guys_little_lies_and_alibis-693614590-msmall.jpg' },
+  { id: 300, titulo: 'HIDDEN DRAGON', imagen: 'https://pics.filmaffinity.com/hidden_dragon-891801002-msmall.jpg' },
+]
+
+const western = [
+  { id: 301, titulo: 'PISTOLEROS', imagen: 'https://pics.filmaffinity.com/gunslingers-565790328-msmall.jpg' },
+  { id: 302, titulo: 'A PRAYER FOR THE DYING', imagen: 'https://pics.filmaffinity.com/a_prayer_for_the_dying-906627576-msmall.jpg' },
+  { id: 303, titulo: 'EMPEZAR DE NUEVO', imagen: 'https://pics.filmaffinity.com/broke-629222804-msmall.jpg' },
+  { id: 304, titulo: 'AJUSTE DE CUENTAS', imagen: 'https://pics.filmaffinity.com/day_of_reckoning-206466220-msmall.jpg' },
+  { id: 305, titulo: 'RUST: LA LEY DEL OESTE', imagen: 'https://pics.filmaffinity.com/rust-179138522-msmall.jpg' },
+  { id: 306, titulo: 'HIGH HORSE', imagen: 'https://pics.filmaffinity.com/high_horse_the_black_cowboy-888993819-msmall.jpg' },
+  { id: 307, titulo: 'DJANGO IMBATIBLE', imagen: 'https://pics.filmaffinity.com/django_undisputed-605342539-msmall.jpg' },
+  { id: 308, titulo: 'BROKEN TRAIL', imagen: 'https://pics.filmaffinity.com/broken_trail-366060672-msmall.jpg' },
+  { id: 309, titulo: 'FRONTIER CRUCIBLE', imagen: 'https://pics.filmaffinity.com/frontier_crucible-486386059-msmall.jpg' },
+  { id: 310, titulo: 'GUNS OF REDEMPTION', imagen: 'https://pics.filmaffinity.com/guns_of_redemption-882974710-msmall.jpg' },
+  { id: 311, titulo: 'SOD AND STUBBLE', imagen: 'https://pics.filmaffinity.com/sod_and_stubble-377475172-msmall.jpg' },
+  { id: 312, titulo: 'AL NOROESTE DEL OESTE', imagen: 'https://pics.filmaffinity.com/ao_noroeste_do_oeste-782393097-msmall.jpg' },
+  { id: 313, titulo: 'POR UN PUÑADO DE FRASES', imagen: 'https://pics.filmaffinity.com/por_un_punado_de_frases-132317280-msmall.jpg' },
+  { id: 314, titulo: 'ROSEWATER', imagen: 'https://pics.filmaffinity.com/rosewater-618159090-msmall.jpg' },
+  { id: 315, titulo: 'LOS ABANDONADOS', imagen: 'https://pics.filmaffinity.com/the_abandons-631588627-msmall.jpg' },
+  { id: 316, titulo: 'LUCKY LUKE', imagen: 'https://pics.filmaffinity.com/lucky_luke-274214633-msmall.jpg' },
+  { id: 317, titulo: 'TORNADO', imagen: 'https://pics.filmaffinity.com/tornado-965453262-msmall.jpg' },
+  { id: 318, titulo: 'EL ULTIMO RODEO', imagen: 'https://pics.filmaffinity.com/the_last_rodeo-656590888-msmall.jpg' },
+  { id: 319, titulo: 'CINCO FORAJIDOS', imagen: 'https://pics.filmaffinity.com/the_outlaws-390196802-msmall.jpg' },
+  { id: 320, titulo: 'LALEYENDA DEL ESCANYAPOBRES', imagen: 'https://pics.filmaffinity.com/escanyapobres-994078624-msmall.jpg' },
+]
+
 function Home() {
   return (
     <>
@@ -150,9 +196,8 @@ function Home() {
       <CategoriaSlider titulo="Películas de Comedia" peliculas={comedia} />
       <CategoriaSlider titulo="Películas de Drama" peliculas={drama} />
       <CategoriaSlider titulo="Películas de Ciencia Ficción" peliculas={cienciaFiccion} />
-      
-      
-    
+      <CategoriaSlider titulo="Películas de Animación" peliculas={animacion} />
+      <CategoriaSlider titulo="Películas de Western" peliculas={western} />      
     </>
   )
 }
