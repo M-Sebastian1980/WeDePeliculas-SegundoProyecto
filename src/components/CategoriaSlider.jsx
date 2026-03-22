@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Modal } from 'react-bootstrap'
-import './CategoriaSlider.css'
+import "../styles/CategoriaSlider.css"
 
 function CategoriaSlider({ titulo, peliculas }) {
   const [peliculasPorVista, setPeliculasPorVista] = useState(5)
