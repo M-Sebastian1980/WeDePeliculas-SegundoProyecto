@@ -38,3 +38,19 @@ function LoginPage (){
     }
 
 }
+    useEffect(()=>{
+            function CheckAuth (){
+            const userAuth = JSON.parse(localStorage.getItem("auth"))
+            if(userAuth && userAuth.auth){
+                navigate("/admin")
+                return
+            }
+        }
+            CheckAuth()
+            SubirUsuarios()
+        },[])
+
+
+export {
+    LoginPage
+}
