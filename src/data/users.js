@@ -11,3 +11,15 @@ const UsuariosData = [
 
     }
 ]
+
+function SubirUsuarios (){
+    const UsuarioActual = localStorage.getItem("users")
+    if(!UsuarioActual){
+        localStorage.setItem("users", JSON.stringify(UsuariosData))
+    }
+    return
+}
+
+export{
+    SubirUsuarios
+}
