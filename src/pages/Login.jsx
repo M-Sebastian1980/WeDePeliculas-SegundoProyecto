@@ -34,21 +34,51 @@ function LoginPage (){
             auth: true,
             ...userFound
         }))
-        useNavigate("/admin")     
-    }
+        useNavigate("/admin")
+        
+        
 
-}
+
+
+    }
     useEffect(()=>{
-            function CheckAuth (){
-            const userAuth = JSON.parse(localStorage.getItem("auth"))
-            if(userAuth && userAuth.auth){
-                navigate("/admin")
-                return
-            }
-        }
-            CheckAuth()
-            SubirUsuarios()
-        },[])
+    function CheckAuth (){
+    const userAuth = JSON.parse(localStorage.getItem("auth"))
+    if(userAuth && userAuth.auth){
+    navigate("/admin")
+    return
+    }
+    }
+    CheckAuth()
+    SubirUsuarios()
+    },[])
+
+    return(
+        <>
+       <div> 
+        <h1>Iniciar Sesion</h1> 
+        <form onSubmit={(e)=>{handleLogin(e)}}> 
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                minLength={4} 
+                maxLength={100} 
+            /> 
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="Contraseña" 
+                minLength={8} 
+                maxLength={100} 
+            /> 
+            <button>Iniciar Sesion</button> 
+            </form> 
+       </div>
+        </>
+    )
+}
+
 
 
 export {
