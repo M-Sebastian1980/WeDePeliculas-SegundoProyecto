@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <h1>Home de pelís</h1>
+      <h1>Home</h1>
     </>
   )
 }
