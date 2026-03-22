@@ -36,9 +36,6 @@ function LoginPage (){
         }))
         useNavigate("/admin")
         
-        
-
-
 
     }
     useEffect(()=>{
@@ -78,8 +75,6 @@ function LoginPage (){
         </>
     )
 }
-
-
 
 export {
     LoginPage
