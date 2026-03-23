@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { SubirUsuarios } from "../data/user"
+import { SubirUsuarios } from "../data/users"
 import { useNavigate } from "react-router"
 
 function LoginPage (){
@@ -36,7 +36,6 @@ function LoginPage (){
         }))
         useNavigate("/admin")
         
-
     }
     useEffect(()=>{
     function CheckAuth (){
