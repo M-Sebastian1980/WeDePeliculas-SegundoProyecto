@@ -1,0 +1,19 @@
+/* Fondo, borde y sombra adaptados al estilo del Navbar */
+.footer-container {
+  background: linear-gradient(to right, #0a093e 0%, #153363 100%) !important;
+  border-top: 1px solid #333;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilos para los enlaces de texto */
+.social-text-link {
+  transition: color 0.3s ease, text-shadow 0.2s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Efecto al pasar el mouse */
+.social-text-link:hover {
+  color: #e50914 !important; /* Rojo tipo cine */
+  text-shadow: 0 0 5px rgba(229, 9, 20, 0.4);
+}
