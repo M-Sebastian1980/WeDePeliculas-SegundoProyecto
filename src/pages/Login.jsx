@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { SubirUsuarios } from "../data/users"
 import { useNavigate } from "react-router"
 
+
 function LoginPage (){
 
     const navigate = useNavigate()
@@ -51,29 +52,35 @@ function LoginPage (){
 
     return(
         <>
-       <div className="container-form"> 
-        <h1>Iniciar Sesion</h1> 
-        <form onSubmit={(e)=>{handleLogin(e)}}> 
-            <input
-                className="input-email"
-                type="email" 
-                name="email" 
-                placeholder="Email" 
-                minLength={4} 
-                maxLength={100}
-                required
-            /> 
-            <input 
-                className="input-password"
-                type="password" 
-                name="password" 
-                placeholder="Contraseña" 
-                minLength={8} 
-                maxLength={100} 
-                required
-            /> 
-            <button className="btn">Iniciar Sesion</button> 
-            </form> 
+        <div className="container d-flex justify-content-center align-items-center vh-100">
+        <div className="card p-4 shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
+        <h1 className="text-center mb-4">Iniciar Sesión</h1>
+        <form onSubmit={(e) => handleLogin(e)}>
+        <div className="mb-3">
+          <label className="form-label">Email</label>
+          <input
+            className="form-control"
+            type="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Contraseña</label>
+          <input
+            className="form-control"
+            type="password"
+            name="password"
+            placeholder="********"
+            required
+          />
+        </div>
+        <button className="btn btn-primary w-100 shadow-sm" type="submit">
+          Iniciar Sesión
+        </button>
+      </form>
+        </div> 
        </div>
         </>
     )
