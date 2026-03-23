@@ -51,24 +51,28 @@ function LoginPage (){
 
     return(
         <>
-       <div> 
+       <div className="container-form"> 
         <h1>Iniciar Sesion</h1> 
         <form onSubmit={(e)=>{handleLogin(e)}}> 
-            <input 
+            <input
+                className="input-email"
                 type="email" 
                 name="email" 
                 placeholder="Email" 
                 minLength={4} 
-                maxLength={100} 
+                maxLength={100}
+                required
             /> 
             <input 
+                className="input-password"
                 type="password" 
                 name="password" 
                 placeholder="Contraseña" 
                 minLength={8} 
                 maxLength={100} 
+                required
             /> 
-            <button>Iniciar Sesion</button> 
+            <button className="btn">Iniciar Sesion</button> 
             </form> 
        </div>
         </>
