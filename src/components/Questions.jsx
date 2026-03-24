@@ -37,7 +37,7 @@
       </h2>
       <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
         <div class="accordion-body bg-light text-dark">
-          Sí, la plataforma ofrece películas y series en calidad HD para brindar una mejor experiencia de visualización.
+          Sí, la plataforma ofrece películas en calidad HD para brindar una mejor experiencia de visualización.
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
       </h2>
       <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
         <div class="accordion-body bg-light text-dark">
-          Podrás encontrar películas y series de distintos géneros, como terror, acción, comedia, drama y mucho más.
+          Podrás encontrar películas de distintos géneros, como terror, acción, comedia, drama y mucho más.
         </div>
       </div>
     </div>
