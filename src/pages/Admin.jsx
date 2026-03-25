@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ModalMovie from "../components/Modal";
 import ModalDeleteMovie from "../components/ModalDeleteMovie";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../styles/admin.css";
 
 function AdminPage() {
@@ -72,6 +73,7 @@ function AdminPage() {
                 </table>
 
             </div>
+            <Footer />
         </>
     )
 }
