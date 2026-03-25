@@ -62,7 +62,7 @@ function CategoriaSlider({ titulo, peliculas }) {
   return (
     <>
       <section className="categoria-slider-section">
-        <h2 className="categoria-slider-titulo text-black">{titulo}</h2>
+        <h2 className="categoria-slider-titulo text-light">{titulo}</h2>
 
         <div className="categoria-slider-contenedor">
           <button onClick={anterior} disabled={paginaActual === 0}>
