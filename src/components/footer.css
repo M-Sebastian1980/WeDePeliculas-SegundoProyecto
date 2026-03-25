@@ -1,0 +1,36 @@
+
+.footer-container {
+  background: linear-gradient(to right, #0a093e 0%, #153363 100%) !important;
+  border-top: 1px solid #333;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); 
+  min-height: 100px; 
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.footer-socials {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-socials {
+    position: static;
+    justify-content: center;
+  }
+}
