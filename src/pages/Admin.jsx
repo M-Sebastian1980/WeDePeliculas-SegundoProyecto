@@ -1,6 +1,5 @@
-import { useEffectEvent, useState } from "react";
+import { useEffect, useState } from "react";
 import ModalMovie from "../components/Modal";
-import Button from 'react-bootstrap/Button';
 import ModalDeleteMovie from "../components/ModalDeleteMovie";
 
 function AdminPage() {
@@ -8,12 +7,9 @@ function AdminPage() {
     const [movies, setMovies] = useState([]);
 
     function getMovies() {
-        const movies = JSON.parse(localStorage.getItem('movies'));
-        if (!movies) {
-            return;
-        }
-        setMovies(movies);
-    }
+    const movies = JSON.parse(localStorage.getItem('movies')) || [];
+    setMovies(movies);
+}
 
     useEffect(() => {
         getMovies();

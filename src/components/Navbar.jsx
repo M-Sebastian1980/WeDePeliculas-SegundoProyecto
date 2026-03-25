@@ -40,7 +40,7 @@ function Navbar() {
     );
 
     if (usuarioEncontrado) {
-      localStorage.setItem("auth", JSON.stringify({ email: email, nombre: usuarioEncontrado.nombre }));
+      localStorage.setItem("auth", JSON.stringify({  auth: true, email: email, nombre: usuarioEncontrado.nombre }));
       window.location.reload(); 
     } else {
       setErrorMensaje("Email o contraseña incorrectos.");
