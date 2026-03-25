@@ -55,8 +55,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${activeMovie.image})` }}
     >
       <div className="hero-overlay">
-        <div className="hero-content">
-          <span className="hero-tag">Película destacada</span>
+        <div className="hero-content">         
           <h1>{activeMovie.title}</h1>
           <p>{activeMovie.description}</p>
 
