@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import CategoriaSlider from '../components/CategoriaSlider'
 import Hero from '../components/Hero'
 import Questions from "../components/Questions"
+import Footer from "../components/Footer"
 
 const accion = [
   { id: 1, titulo: 'SHELTER', imagen: 'https://pics.filmaffinity.com/shelter-235138105-large.jpg', trailer:'https://www.youtube.com/embed/4h7uFYvqYUc?si=HKGJdv-g86Lu4UGk' },
@@ -203,6 +204,7 @@ function Home() {
       <CategoriaSlider titulo="Películas de Western" peliculas={western} />   
 
       <Questions />
+      <Footer />
 
     </>
   )
