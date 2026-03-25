@@ -4,28 +4,27 @@ import "./Hero.css";
 
 const featuredMovies = [
   {
-    id: 2,
+    id: 21,
     title: "AVENGERS: ENDGAME",
-    description:
-      "Después de los eventos devastadores causados por Thanos, los Vengadores restantes deben reunirse para restaurar el equilibrio del universo.",
-    image:
+      image:
       "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80",
+      trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
   },
   {
-    id: 3,
+    id: 22,
     title: "BATMAN",
-    description:
-      "Bruce Wayne regresa para proteger Gotham de una nueva amenaza que pone en riesgo a toda la ciudad.",
+    
     image:
       "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=80",
+       trailer: "https://www.youtube.com/watch?v=mqqft2x_Aa4",
   },
   {
-    id: 4,
+    id: 23,
     title: "INTERSTELLAR",
-    description:
-      "Un grupo de exploradores viaja más allá de nuestra galaxia en busca de un nuevo hogar para la humanidad.",
+    
     image:
       "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1600&q=80",
+      trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E",
   },
 ];
 
@@ -45,7 +44,7 @@ export default function Hero() {
 
   const activeMovie = featuredMovies[currentMovie];
 
-  const goToDetail = () => {
+  const irADetalle = () => {
     navigate(`/detalle/${activeMovie.id}`);
   };
 
@@ -61,10 +60,10 @@ export default function Hero() {
           <p>{activeMovie.description}</p>
 
           <div className="hero-buttons">
-            <button className="btn-primary" onClick={goToDetail}>
+            <button className="btn-primary" onClick={() => window.open(activeMovie.trailer, "_blank")}>
                Ver ahora
             </button>
-            <button className="btn-secondary" onClick={goToDetail}>
+            <button className="btn-secondary" onClick={irADetalle}>
                Más información
             </button>
           </div>

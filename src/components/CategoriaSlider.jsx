@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Modal } from 'react-bootstrap'
 import "../styles/CategoriaSlider.css"
 
@@ -7,6 +8,9 @@ function CategoriaSlider({ titulo, peliculas }) {
   const [paginaActual, setPaginaActual] = useState(0)
   const [show, setShow] = useState(false)
   const [trailerUrl, setTrailerUrl] = useState('')
+  const [peliculaSeleccionada, setPeliculaSeleccionada] = useState(null)
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const actualizarVista = () => {
@@ -49,14 +53,22 @@ function CategoriaSlider({ titulo, peliculas }) {
     }
   }
 
-  const abrirModal = (trailer) => {
-    setTrailerUrl(trailer)
+  const abrirModal = (pelicula) => {
+    setTrailerUrl(pelicula.trailer)
+    setPeliculaSeleccionada(pelicula)
     setShow(true)
   }
 
   const cerrarModal = () => {
     setShow(false)
     setTrailerUrl('')
+    setPeliculaSeleccionada(null)
+  }
+
+  const irADetalle = () => {
+    if (!peliculaSeleccionada) return
+    cerrarModal()
+    navigate(`/detalle/${peliculaSeleccionada.id}`)
   }
 
   return (
@@ -74,7 +86,7 @@ function CategoriaSlider({ titulo, peliculas }) {
               <article
                 key={`${titulo}-${paginaActual}-${pelicula.id}`}
                 className="categoria-slider-card"
-                onClick={() => abrirModal(pelicula.trailer)}
+                onClick={() => abrirModal(pelicula)}
               >
                 <img src={pelicula.imagen} alt={pelicula.titulo} />
                 <h3>{pelicula.titulo}</h3>
@@ -92,41 +104,46 @@ function CategoriaSlider({ titulo, peliculas }) {
       </section>
 
       <Modal show={show} onHide={cerrarModal} centered size="lg">
-  <   Modal.Header closeButton />
-      <Modal.Body className="p-0">
-        <div className="ratio ratio-16x9">
-          <iframe
-             src={trailerUrl}
-             title="Trailer"
-             allow="autoplay; encrypted-media"
-             allowFullScreen
-           ></iframe>
+        <Modal.Header closeButton />
+        <Modal.Body className="p-0">
+          <div className="ratio ratio-16x9">
+            <iframe
+              src={trailerUrl}
+              title="Trailer"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Modal.Body>
+
+        <div
+          className="position-relative"
+          style={{ padding: '10px', background: 'black' }}
+        >
+          <div style={{ textAlign: 'center' }}>
+            <button
+              onClick={cerrarModal}
+              style={{ backgroundColor: 'red', color: 'white' }}
+            >
+              Cerrar
+            </button>
+          </div>
+
+          <button
+            onClick={irADetalle}
+            className="position-absolute end-0 top-50 translate-middle-y"
+            style={{
+              backgroundColor: 'green',
+              color: 'white',
+              border: 'none',
+              padding: '8px 12px',
+              borderRadius: '5px'
+            }}
+          >
+            Descripción de película
+          </button>
         </div>
-     </Modal.Body>
-             <div className="position-relative" style={{ 
-              padding: '10px', background:'black'}}>
-    
-    
-    <div style={{ textAlign: 'center' }}>
-      <button onClick={cerrarModal} style={{backgroundColor:'red', color:'white'}}>Cerrar</button>
-    </div>
-
-    <button
-  className="position-absolute end-0 top-50 translate-middle-y"
-  style={{
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '8px 12px',
-    borderRadius: '5px'
-  }}
->
-  Descripción de película
-</button>
-
-  </div>
-     
-    </Modal>
+      </Modal>
     </>
   )
 }

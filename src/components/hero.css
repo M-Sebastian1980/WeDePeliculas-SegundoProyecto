@@ -7,6 +7,10 @@ body,
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #080b14;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,23 +18,18 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #15357a 0%, #0b0b0f 18%, #0b0b0f 100%);
-  color: white;
-  overflow-x: hidden;
-}
-
-/* HERO */
-.hero {
-  width: 100%;
   min-height: 88vh;
+  background: linear-gradient(to bottom, #15357a 0%, #0b0b0f 18%, #0b0b0f 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   position: relative;
 }
+
 .hero-overlay {
   width: 100%;
   min-height: 88vh;
@@ -130,7 +129,6 @@ body {
   border-color: rgba(255, 255, 255, 0.35);
 }
 
-/* Dots */
 .hero-dots {
   display: flex;
   gap: 12px;
@@ -142,6 +140,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   cursor: pointer;
+  border: none;
   transition:
     transform 0.25s ease,
     background 0.25s ease,
@@ -159,7 +158,6 @@ body {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
-/* SECCION PELICULAS */
 .movie-section {
   padding: 56px 72px;
 }
@@ -175,6 +173,102 @@ body {
   letter-spacing: -0.5px;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-overlay {
+    min-height: 80vh;
+    padding: 0 40px;
+  }
+
+  .hero-content {
+    max-width: 580px;
+    padding-top: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .movie-section {
+    padding: 48px 40px;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/*TABLET */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 75vh;
+    align-items: flex-end;
+  }
+
+  .hero-overlay {
+    min-height: 75vh;
+    padding: 0 24px 36px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95) 20%,
+      rgba(0, 0, 0, 0.65) 55%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .hero-tag {
+    font-size: 13px;
+    padding: 8px 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 13px 22px;
+    font-size: 14px;
+  }
+
+  .movie-section {
+    padding: 40px 24px;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/*  CELULAR */
 @media (max-width: 480px) {
   .hero {
     min-height: 72vh;
@@ -182,27 +276,60 @@ body {
 
   .hero-overlay {
     min-height: 72vh;
-    padding: 0 16px 40px;
+    padding: 0 16px 28px;
+  }
+
+  .hero-tag {
+    font-size: 12px;
+    padding: 7px 12px;
+    margin-bottom: 14px;
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.05;
+    margin-bottom: 14px;
   }
 
   .hero-content p {
     font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
+    width: 100%;
   }
 
   .btn-primary,
   .btn-secondary {
     width: 100%;
     text-align: center;
+    padding: 13px 18px;
+  }
+
+  .hero-dots {
+    gap: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .movie-section {
+    padding: 32px 16px;
+  }
+
+  .section-header {
+    margin-bottom: 18px;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
   }
 
   .movie-card {
@@ -218,8 +345,23 @@ body {
     font-size: 16px;
     min-height: 44px;
   }
+}
 
-  .section-header h2 {
-    font-size: 1.4rem;
+/* CELULAR MUY CHICO */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .hero-overlay {
+    padding: 0 12px 24px;
+  }
+
+  .movie-section {
+    padding: 28px 12px;
   }
 }
