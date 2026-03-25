@@ -1,28 +1,32 @@
 import { useEffect, useState } from "react";
 import ModalMovie from "../components/Modal";
 import ModalDeleteMovie from "../components/ModalDeleteMovie";
+import "../styles/admin.css";
 
 function AdminPage() {
 
     const [movies, setMovies] = useState([]);
 
     function getMovies() {
-    const movies = JSON.parse(localStorage.getItem('movies')) || [];
-    setMovies(movies);
-}
+        const movies = JSON.parse(localStorage.getItem('movies')) || [];
+        setMovies(movies);
+    }
 
     useEffect(() => {
         getMovies();
     }, []);
 
     return (
-        <>
-            <ModalMovie
-                buttonName='Agregar película'
-                getMovies={getMovies}
-            />
+        <div className="admin-container">
+            <div className="admin-header">
+                <h1 className="admin-title">Panel de Administración</h1>
+                <ModalMovie
+                    buttonName='Agregar película'
+                    getMovies={getMovies}
+                />
+            </div>
 
-            <table border={1}>
+            <table className="admin-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -43,15 +47,19 @@ function AdminPage() {
                                 <td>{movie.description}</td>
                                 <td>{movie.published}</td>
                                 <td>
-                                    <ModalMovie
-                                        buttonName='E'
-                                        getMovies={getMovies}
-                                        id={movie.id}
-                                    />
-                                    <ModalDeleteMovie
-                                        id={movie.id}
-                                        getMovies={getMovies}
-                                    />
+                                    <td>
+                                        <div className="admin-actions">
+                                            <ModalMovie
+                                                buttonName='E'
+                                                getMovies={getMovies}
+                                                id={movie.id}
+                                            />
+                                            <ModalDeleteMovie
+                                                id={movie.id}
+                                                getMovies={getMovies}
+                                            />
+                                        </div>
+                                    </td>
                                 </td>
                             </tr>
                         ))
@@ -59,7 +67,7 @@ function AdminPage() {
                 </tbody>
             </table>
 
-        </>
+        </div>
     )
 }
 export default AdminPage;
