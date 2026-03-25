@@ -1,24 +1,23 @@
 import { useEffect } from "react";
-import { Outlet, useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router-dom";
 
-function ProtectedRoutes (){
-    const navigate = useNavigate()
-    useEffect(() => {
-        function CheckAuth (){
-        const userAuth = JSON.parse(localStorage.getItem("auth"))
-        if(!userAuth || !userAuth.auth){
-            navigate("/login")
-            alert("Debes Iniciar Sesion")
-            return
-        }
+function ProtectedRoutes() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    function checkAuth() {
+      const userAuth = JSON.parse(localStorage.getItem("auth"));
+
+      if (!userAuth || !userAuth.auth) {
+        alert("Debes iniciar sesión");
+        navigate("/login");
+      }
     }
-    } ,[]
-    )
-   
-    
-    return <Outlet/>
+
+    checkAuth();
+  }, [navigate]);
+
+  return <Outlet />;
 }
 
-export {
-    ProtectedRoutes
-}
+export default ProtectedRoutes;
