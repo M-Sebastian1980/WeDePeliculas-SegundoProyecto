@@ -106,21 +106,21 @@ function Navbar() {
               </NavLink>
             </li>
 
-            {!userAuth ? (
-              <li className="nav-item position-relative mt-2 mt-lg-0">
-                <button
-                  type="button"
-                  className="nav-link text-white"
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => navigate("/admin")}
-                >
-                  Administrar
-                </button>
-              </li>
-            ) : (
+            <li className="nav-item position-relative mt-2 mt-lg-0">
+              <button
+                type="button"
+                className="nav-link text-white"
+                style={{ cursor: 'pointer', background: 'none', border: 'none' }}
+                onClick={() => navigate("/admin")}
+              >
+                Administrar
+              </button>
+            </li>
+
+            {userAuth && (
               <li className="nav-item d-flex flex-column flex-lg-row align-items-center gap-2 gap-lg-3 mt-3 mt-lg-0">
                 <span className="text-white small">
-                  Hola, {userAuth.nombre}
+                  {userAuth.nombre}
                 </span>
                 <button
                   className="btn btn-outline-danger btn-sm"
