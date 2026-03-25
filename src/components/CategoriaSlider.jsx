@@ -106,12 +106,11 @@ function CategoriaSlider({ titulo, peliculas }) {
              <div className="position-relative" style={{ 
               padding: '10px', background:'black'}}>
     
-    {/* Botón centrado */}
+    
     <div style={{ textAlign: 'center' }}>
       <button onClick={cerrarModal} style={{backgroundColor:'red', color:'white'}}>Cerrar</button>
     </div>
 
-    {/* Botón a la derecha */}
     <button
   className="position-absolute end-0 top-50 translate-middle-y"
   style={{
