@@ -107,22 +107,22 @@ function CategoriaSlider({ titulo, peliculas }) {
               padding: '10px', background:'black'}}>
     
     
-    <div style={{ textAlign: 'center' }}>
-      <button onClick={cerrarModal} style={{backgroundColor:'red', color:'white'}}>Cerrar</button>
-    </div>
-
+    <div className="d-flex flex-column flex-sm-row justify-content-center gap-2 p-3">
     <button
-  className="position-absolute end-0 top-50 translate-middle-y"
-  style={{
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '8px 12px',
-    borderRadius: '5px'
-  }}
->
-  Descripción de película
-</button>
+    className="btn btn-success w-100"
+  >
+    Descripción de película
+  </button>
+  
+  <button
+    onClick={cerrarModal}
+    className="btn btn-danger w-100"
+  >
+    Cerrar
+  </button>
+
+  
+</div>
 
   </div>
      
