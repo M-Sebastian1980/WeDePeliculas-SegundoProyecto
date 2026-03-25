@@ -62,7 +62,7 @@ function CategoriaSlider({ titulo, peliculas }) {
   return (
     <>
       <section className="categoria-slider-section">
-        <h2 className="categoria-slider-titulo text-black">{titulo}</h2>
+        <h2 className="categoria-slider-titulo text-light">{titulo}</h2>
 
         <div className="categoria-slider-contenedor">
           <button onClick={anterior} disabled={paginaActual === 0}>
@@ -92,21 +92,41 @@ function CategoriaSlider({ titulo, peliculas }) {
       </section>
 
       <Modal show={show} onHide={cerrarModal} centered size="lg">
-  <Modal.Header closeButton />
-  <Modal.Body className="p-0">
-    <div className="ratio ratio-16x9">
-      <iframe
-        src={trailerUrl}
-        title="Trailer"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-      ></iframe>
+  <   Modal.Header closeButton />
+      <Modal.Body className="p-0">
+        <div className="ratio ratio-16x9">
+          <iframe
+             src={trailerUrl}
+             title="Trailer"
+             allow="autoplay; encrypted-media"
+             allowFullScreen
+           ></iframe>
+        </div>
+     </Modal.Body>
+             <div className="position-relative" style={{ 
+              padding: '10px', background:'black'}}>
+    
+    
+    <div style={{ textAlign: 'center' }}>
+      <button onClick={cerrarModal} style={{backgroundColor:'red', color:'white'}}>Cerrar</button>
     </div>
-  </Modal.Body>
-  <div style={{ textAlign: 'center', padding: '10px' }}>
-    <button onClick={cerrarModal}>Cerrar</button>
+
+    <button
+  className="position-absolute end-0 top-50 translate-middle-y"
+  style={{
+    backgroundColor: 'green',
+    color: 'white',
+    border: 'none',
+    padding: '8px 12px',
+    borderRadius: '5px'
+  }}
+>
+  Descripción de película
+</button>
+
   </div>
-</Modal>
+     
+    </Modal>
     </>
   )
 }
