@@ -193,7 +193,7 @@ function Home() {
     <>
       <Hero />
       <Navbar />
-      <h1>Home de pelís</h1>
+      
       <CategoriaSlider titulo="Películas de Acción" peliculas={accion} />
       <CategoriaSlider titulo="Películas de Terror" peliculas={terror} />
       <CategoriaSlider titulo="Películas de Romance" peliculas={romance} />
