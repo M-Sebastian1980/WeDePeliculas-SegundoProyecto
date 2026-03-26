@@ -93,5 +93,8 @@ http://localhost:5173
 
 ## 📌 Notas
 
-- Proyecto realizado con fines educativos
-- Trabajo colaborativo utilizando Git y GitHub
+Este proyecto fue desarrollado de forma colaborativa, aplicando buenas prácticas de trabajo en equipo mediante el uso de Git y GitHub.
+
+Cada integrante trabajó sobre ramas independientes, integrando sus avances a través de Pull Requests y merges controlados, lo que permitió mantener un flujo de trabajo ordenado, evitar conflictos y asegurar la calidad del código final.
+
+El desarrollo no solo implicó la construcción de la aplicación, sino también el aprendizaje de metodologías de colaboración reales utilizadas en entornos profesionales.
