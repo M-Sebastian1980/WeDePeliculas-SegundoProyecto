@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { SubirUsuarios } from "../data/users";
 import { useNavigate } from "react-router-dom";
 
+
+
 function LoginPage() {
   const navigate = useNavigate();
 
@@ -64,6 +66,8 @@ function LoginPage() {
                 type="email"
                 name="email"
                 placeholder="ejemplo@correo.com"
+                minLength={6}
+                maxLength={20}
                 required
               />
             </div>
@@ -74,11 +78,16 @@ function LoginPage() {
                 type="password"
                 name="password"
                 placeholder="********"
+                minLength={8}
+                maxLength={20}
                 required
               />
             </div>
             <button className="btn btn-primary w-100 shadow-sm" type="submit">
               Iniciar Sesión
+            </button>
+            <button className="btn btn-primary w-100 shadow-sm mt-2" type="button" onClick={() => navigate("/")}>
+              Cancelar
             </button>
           </form>
         </div>
