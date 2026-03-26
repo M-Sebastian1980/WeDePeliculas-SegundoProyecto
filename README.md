@@ -1,18 +1,97 @@
-# React + Vite
+# 🎬 RollZine - Modern Movie Streaming
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React que permite explorar y ver películas online de forma gratuita, incluyendo detalles y reproducción de trailers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ React
+- ⚡ Vite
+- 🎨 CSS
+- 📦 JavaScript
+- 🔀 Git & GitHub
+- 🎞️ React Router DOM
+- 🎨 Bootstrap / React-Bootstrap
+- 🔔 Sonner (notificaciones)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📌 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🎥 Visualización de películas destacadas
+- 📂 Categorías de películas
+- 🔍 Navegación dinámica entre secciones
+- ▶️ Reproducción de trailers
+- 🔐 Sistema de Login
+- 📄 Página de detalle de película
+- 🎨 Diseño responsive
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Estructura del proyecto
+
+```
+src/
+│
+├── assets/
+├── components/
+├── pages/
+├── data/
+├── routes/
+├── styles/
+└── App.jsx
+```
+
+---
+
+## ⚙️ Instalación y uso
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/M-Sebastian1980/WeDePeliculas-SegundoProyecto.git
+```
+
+2. Instalar dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecutar el proyecto:
+
+```bash
+npm run dev
+```
+
+4. Abrir en el navegador:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 👥 Equipo de desarrollo
+
+- Aldana Ruiz
+- Alejo Carmona
+- Mauro Sebastián Seu
+- Octavio Fernandez
+- Santiago Brizuela
+
+---
+
+## 🔄 Flujo de trabajo
+
+- Rama principal: `main`
+- Rama de desarrollo: `dev`
+- Ramas de trabajo: `feature/*`
+
+---
+
+## 📌 Notas
+
+- Proyecto realizado con fines educativos
+- Trabajo colaborativo utilizando Git y GitHub
