@@ -4,30 +4,30 @@ import "./Hero.css";
 
 const featuredMovies = [
 {
-    id: 2,
+    id: 21,
     title: "AVENGERS: ENDGAME",
     description:
-      "Después de los eventos devastadores causados por Thanos, los Vengadores restantes deben reunirse para restaurar el equilibrio del universo.",
+      "",
     image:
       "https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
   },
 
 
 {
-    id: 3,
+    id: 22,
     title: "BATMAN",
     description:
-      "Bruce Wayne regresa para proteger Gotham de una nueva amenaza que pone en riesgo a toda la ciudad.",
+      "",
     image:
       "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
   },
 {
-    id: 4,
+    id: 23,
     title: "INTERSTELLAR",
     description:
-      "Un grupo de exploradores viaja más allá de nuestra galaxia en busca de un nuevo hogar para la humanidad.",
+      "",
     image:
-      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "https://framerusercontent.com/images/LaWlbEkrTmKgHyJrmjajVfD3I.jpg?width=967&height=544",
   },
 ];
 
@@ -52,10 +52,14 @@ export default function Hero() {
   };
 
   return (
+    
     <section
+    
       className="hero"
       style={{ backgroundImage: `url(${activeMovie.image})` }}
     >
+  
+
       <div className="hero-overlay">
         <div className="hero-content">         
           <h1>{activeMovie.title}</h1>
@@ -65,9 +69,9 @@ export default function Hero() {
             <button className="btn-primary" onClick={goToDetail}>
                Ver ahora
             </button>
-            <button className="btn-secondary" onClick={goToDetail}>
+            {/* <button className="btn-secondary" onClick={goToDetail}>
                Más información
-            </button>
+            </button> */}
           </div>
 
 
