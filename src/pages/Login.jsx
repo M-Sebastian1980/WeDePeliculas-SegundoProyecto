@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { SubirUsuarios } from "../data/users";
 import { useNavigate } from "react-router-dom";
-import "./login.css"
+
 
 
 function LoginPage() {
