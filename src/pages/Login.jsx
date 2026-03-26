@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { SubirUsuarios } from "../data/users";
 import { useNavigate } from "react-router-dom";
+import "./login.css"
+
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -64,6 +66,8 @@ function LoginPage() {
                 type="email"
                 name="email"
                 placeholder="ejemplo@correo.com"
+                minLength={6}
+                maxLength={20}
                 required
               />
             </div>
@@ -74,6 +78,8 @@ function LoginPage() {
                 type="password"
                 name="password"
                 placeholder="********"
+                minLength={8}
+                maxLength={20}
                 required
               />
             </div>
