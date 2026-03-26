@@ -56,24 +56,90 @@ function ModalMovie({ buttonName, getMovies, id }) {
                 {buttonName}
             </Button>
 
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{id ? 'Modificar' : 'Agregar nueva'} película{id && `: ${movieToEdit.name}`}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <form onSubmit={(e) => handleCreateEditMovies(e)}>
-                        <label>Nombre:</label>
-                        <input type="text" name='name' defaultValue={movieToEdit?.name} required />
-                        <label>Categoria:</label>
-                        <input type="text" name='category' defaultValue={movieToEdit?.category} required />
-                        <label>Descripcion breve:</label>
-                        <input type="text" name='description' defaultValue={movieToEdit?.description} required />
-                        <label>Disponible en el sitio</label>
-                        <input type="checkbox" name='published' defaultChecked={movieToEdit?.published} />
-                        <button>{id ? 'Modificar' : 'Agregar nueva'} película</button>
-                    </form>
-                </Modal.Body>
-            </Modal>
+            <Modal show={show} onHide={handleClose} centered>
+  <Modal.Header closeButton className="bg-dark text-white border-0">
+    <Modal.Title className="fw-bold">
+      {id ? 'Modificar película' : 'Agregar nueva película'}
+      {id && `: ${movieToEdit?.name}`}
+    </Modal.Title>
+  </Modal.Header>
+
+  <Modal.Body className="bg-dark text-white">
+    <form onSubmit={(e) => handleCreateEditMovies(e)}>
+      <div className="mb-3">
+        <label htmlFor="name" className="form-label fw-semibold">
+          Nombre
+        </label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          defaultValue={movieToEdit?.name}
+          className="form-control"
+          placeholder="Ingrese el nombre de la película"
+          required
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="category" className="form-label fw-semibold">
+          Categoría
+        </label>
+        <input
+          id="category"
+          type="text"
+          name="category"
+          defaultValue={movieToEdit?.category}
+          className="form-control"
+          placeholder="Ingrese la categoría"
+          required
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="description" className="form-label fw-semibold">
+          Descripción breve
+        </label>
+        <textarea
+          id="description"
+          name="description"
+          defaultValue={movieToEdit?.description}
+          className="form-control"
+          placeholder="Ingrese una descripción breve"
+          rows="3"
+          required
+        />
+      </div>
+
+      <div className="form-check form-switch mb-4">
+        <input
+          id="published"
+          type="checkbox"
+          name="published"
+          defaultChecked={movieToEdit?.published}
+          className="form-check-input"
+        />
+        <label htmlFor="published" className="form-check-label">
+          Disponible en el sitio
+        </label>
+      </div>
+
+      <div className="d-flex justify-content-end gap-2">
+        <button
+          type="button"
+          className="btn btn-outline-light"
+          onClick={handleClose}
+        >
+          Cancelar
+        </button>
+
+        <button type="submit" className="btn btn-warning fw-semibold">
+          {id ? 'Guardar cambios' : 'Agregar película'}
+        </button>
+      </div>
+    </form>
+  </Modal.Body>
+</Modal>
         </>
     );
 }
