@@ -3,28 +3,31 @@ import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 
 const featuredMovies = [
-  {
-    id: 21,
+{
+    id: 2,
     title: "AVENGERS: ENDGAME",
-      image:
-      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80",
-      trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+    description:
+      "Después de los eventos devastadores causados por Thanos, los Vengadores restantes deben reunirse para restaurar el equilibrio del universo.",
+    image:
+      "https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
   },
-  {
-    id: 22,
+
+
+{
+    id: 3,
     title: "BATMAN",
-    
+    description:
+      "Bruce Wayne regresa para proteger Gotham de una nueva amenaza que pone en riesgo a toda la ciudad.",
     image:
-      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=80",
-       trailer: "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+      "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
   },
-  {
-    id: 23,
+{
+    id: 4,
     title: "INTERSTELLAR",
-    
+    description:
+      "Un grupo de exploradores viaja más allá de nuestra galaxia en busca de un nuevo hogar para la humanidad.",
     image:
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1600&q=80",
-      trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
   },
 ];
 
@@ -44,7 +47,7 @@ export default function Hero() {
 
   const activeMovie = featuredMovies[currentMovie];
 
-  const irADetalle = () => {
+  const goToDetail = () => {
     navigate(`/detalle/${activeMovie.id}`);
   };
 
@@ -59,10 +62,10 @@ export default function Hero() {
           <p>{activeMovie.description}</p>
 
           <div className="hero-buttons">
-            <button className="btn-primary" onClick={() => window.open(activeMovie.trailer, "_blank")}>
+            <button className="btn-primary" onClick={goToDetail}>
                Ver ahora
             </button>
-            <button className="btn-secondary" onClick={irADetalle}>
+            <button className="btn-secondary" onClick={goToDetail}>
                Más información
             </button>
           </div>
