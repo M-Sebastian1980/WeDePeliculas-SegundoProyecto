@@ -86,6 +86,9 @@ function LoginPage() {
             <button className="btn btn-primary w-100 shadow-sm" type="submit">
               Iniciar Sesión
             </button>
+            <button className="btn btn-secondary w-100 shadow-sm mt-2" type="button" onClick={() => navigate("/")}>
+              Cancelar
+            </button>
           </form>
         </div>
       </div>
