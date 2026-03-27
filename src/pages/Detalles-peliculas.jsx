@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "./Detalles-peliculas.css";
 
 const movies = [
@@ -177,14 +178,9 @@ export default function Detalle() {
 
   const movie = movies.find((m) => m.id === Number(id));
 
-  if (!movie) {
-    return (
-      <div className="detalle-not-found">
-        <h2>Película no encontrada</h2>
-        <button onClick={() => navigate("/")}>Volver</button>
-      </div>
-    );
-  }
+if (!movie) {
+  return <Navigate to="/404" replace />;
+}
 
   return (
     <section
@@ -201,12 +197,12 @@ export default function Detalle() {
         <p>{movie.descripcion}</p>
 
         <div className="detalle-buttons">
-          <button
+          {/* <button
             className="detalle-btn-primary"
             onClick={() => window.open(movie.trailer, "_blank")}
           >
             ▶ Ver trailer
-          </button>
+          </button> */}
 
           <button
             className="detalle-btn-secondary"
